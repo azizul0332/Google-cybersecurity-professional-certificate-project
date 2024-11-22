@@ -1,1 +1,1 @@
-# Google-cybersecurity-professional-certificate-project
+# A hands-on cybersecurity project completed as part of the Google Cybersecurity Professional Certificate. This repository showcases skills in network defense, vulnerability assessment, log analysis, and incident response, applied through real-world scenarios and simulations.
