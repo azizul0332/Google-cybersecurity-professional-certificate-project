@@ -1,1 +1,241 @@
+# Botium Toys: Scope, Goals, and Risk Assessment Report
+
+## Scope and Goals of the Audit
+
+### Scope
+The scope of this audit is defined as the entire security program at Botium Toys. This includes their assets like employee equipment and devices, their internal network, and their systems. You will need to review the assets Botium Toys has and the controls and compliance practices they have in place.
+
+### Goals
+Assess existing assets and complete the controls and compliance checklist to determine which controls and compliance best practices need to be implemented to improve Botium Toys’ security posture.
+
+---
+
+## Current Assets
+
+Assets managed by the IT Department include:  
+
+- **On-premises equipment** for in-office business needs.  
+- **Employee equipment**: end-user devices (desktops/laptops, smartphones), remote workstations, headsets, cables, keyboards, mice, docking stations, surveillance cameras, etc.  
+- **Storefront products**: Available for retail sale on-site and online; stored in the company’s adjoining warehouse.  
+- **Systems, software, and services management**: Accounting, telecommunication, database, security, e-commerce, and inventory management.  
+- **Internet access**.  
+- **Internal network**.  
+- **Data retention and storage**.  
+- **Legacy system maintenance**: End-of-life systems that require human monitoring.
+
+---
+
+## Risk Assessment
+
+### Risk Description
+Currently, there is inadequate management of assets. Additionally, Botium Toys does not have all of the proper controls in place and may not be fully compliant with U.S. and international regulations and standards.
+
+### Control Best Practices
+The first of the five functions of the NIST CSF is **Identify**. Botium Toys will need to dedicate resources to identify assets so they can appropriately manage them. Additionally, they will need to classify existing assets and determine the impact of the loss of existing assets, including systems, on business continuity.
+
+### Risk Score
+On a scale of 1 to 10, the **risk score** is **8**, which is fairly high. This is due to a lack of controls and adherence to compliance best practices.
+
+---
+
+## Additional Comments
+
+The potential impact from the loss of an asset is rated as **medium**, because the IT department does not know which assets would be at risk. The risk to assets or fines from governing bodies is **high** because Botium Toys does not have all of the necessary controls in place and is not fully adhering to best practices related to compliance regulations that keep critical data private/secure. 
+
+### Specific Details:
+- Currently, all Botium Toys employees have access to internally stored data and may be able to access cardholder data and customers’ PII/SPII.
+- Encryption is not currently used to ensure confidentiality of customers’ credit card information that is accepted, processed, transmitted, and stored locally in the company’s internal database.
+- Access controls pertaining to **least privilege** and **separation of duties** have not been implemented.
+- The IT department has ensured **availability** and integrated controls to ensure **data integrity**.
+- The IT department has a **firewall** that blocks traffic based on an appropriately defined set of security rules.
+- **Antivirus software** is installed and monitored regularly by the IT department.
+- The IT department has **not installed an intrusion detection system (IDS)**.
+- There are **no disaster recovery plans** currently in place, and the company does not have backups of critical data.
+- The IT department has established a plan to notify E.U. customers within **72 hours** if there is a security breach.
+- **Privacy policies, procedures, and processes** have been developed and are enforced among IT department members and other employees to properly document and maintain data.
+- Although a password policy exists, its requirements are nominal and not in line with current minimum password complexity requirements (e.g., at least eight characters, a combination of letters, and at least one number; special characters).
+- There is no centralized **password management system** that enforces the password policy’s minimum requirements, which sometimes affects productivity when employees/vendors submit a ticket to the IT department to recover or reset a password.
+- While legacy systems are monitored and maintained, there is **no regular schedule** in place for these tasks and intervention methods are unclear.
+- The store’s physical location, which includes Botium Toys’ main offices, store front, and warehouse of products, has sufficient locks, up-to-date **closed-circuit television (CCTV)** surveillance, as well as functioning **fire detection and prevention systems**.
+
+
+
+
+
+
+
+# Control Categories in Cybersecurity
+
+Cybersecurity controls are grouped into three main categories:
+
+- **Administrative/Managerial Controls**
+- **Technical Controls**
+- **Physical/Operational Controls**
+
+---
+
+## Administrative/Managerial Controls
+
+Administrative or managerial controls address the human component of cybersecurity. These controls include policies and procedures that define how an organization manages data and outline employee responsibilities. While administrative controls are often policy-based, their enforcement may require technical or physical controls.
+
+### **Examples of Administrative Controls**
+
+| **Control Name**            | **Control Type** | **Control Purpose**                                                                                     |
+|-----------------------------|------------------|---------------------------------------------------------------------------------------------------------|
+| Least Privilege             | Preventative     | Reduce risk and overall impact of malicious insider or compromised accounts.                            |
+| Disaster Recovery Plans     | Corrective       | Provide business continuity.                                                                            |
+| Password Policies           | Preventative     | Reduce likelihood of account compromise through brute force or dictionary attack techniques.            |
+| Access Control Policies     | Preventative     | Bolster confidentiality and integrity by defining which groups can access or modify data.               |
+| Account Management Policies | Preventative     | Manage account lifecycle, reducing attack surface, and limit impact from disgruntled former employees.  |
+| Separation of Duties        | Preventative     | Reduce risk and overall impact of malicious insider or compromised accounts.                            |
+
+---
+
+## Technical Controls
+
+Technical controls include tools and systems such as firewalls, intrusion detection/prevention systems, antivirus software, and encryption. These are used to meet organizational goals and enhance cybersecurity.
+
+### **Examples of Technical Controls**
+
+| **Control Name**       | **Control Type** | **Control Purpose**                                                                 |
+|------------------------|------------------|-------------------------------------------------------------------------------------|
+| Firewall              | Preventative     | Filter unwanted or malicious traffic from entering the network.                    |
+| IDS/IPS               | Detective        | Detect and prevent anomalous traffic that matches a signature or rule.             |
+| Encryption            | Deterrent        | Provide confidentiality to sensitive information.                                  |
+| Backups               | Corrective       | Restore or recover from an event.                                                 |
+| Password Management   | Preventative     | Reduce password fatigue.                                                           |
+| Antivirus (AV) Software| Preventative     | Scan to detect and quarantine known threats.                                       |
+| Manual Monitoring and Maintenance | Preventative | Identify and manage risks or vulnerabilities in out-of-date systems.              |
+
+---
+
+## Physical/Operational Controls
+
+Physical or operational controls limit physical access to assets and deter unauthorized access. Examples include locks, CCTV cameras, and fire detection systems.
+
+### **Examples of Physical Controls**
+
+| **Control Name**               | **Control Type**       | **Control Purpose**                                                                                           |
+|--------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------|
+| Time-Controlled Safe           | Deterrent             | Reduce attack surface and overall impact from physical threats.                                               |
+| Adequate Lighting              | Deterrent             | Deter threats by limiting hiding places.                                                                      |
+| Closed-Circuit Television (CCTV)| Preventative/Detective | Reduce risk of certain events through surveillance and provide information about event conditions afterward.   |
+| Locking Cabinets (for Network Gear)| Preventative      | Bolster integrity by preventing unauthorized physical access to network infrastructure.                       |
+| Signage Indicating Alarm Service Provider | Deterrent | Deter threats by signaling the presence of a security system.                                                 |
+| Locks                          | Deterrent/Preventative| Prevent unauthorized physical access to assets.                                                              |
+| Fire Detection and Prevention  | Detective/Preventative| Detect fire in physical locations and prevent damage to physical assets like inventory and servers.            |
+
+---
+
+## Control Types Overview
+
+Controls serve different purposes and can include:  
+- **Preventative Controls**: Designed to prevent incidents (e.g., firewalls, locks).  
+- **Corrective Controls**: Used to restore systems after an incident (e.g., backups, disaster recovery plans).  
+- **Detective Controls**: Implemented to identify incidents (e.g., IDS, CCTV).  
+- **Deterrent Controls**: Discourage attacks by increasing the effort or risk for the attacker (e.g., signage, encryption).
+
+Together, these controls provide **defense in depth**, enhancing overall cybersecurity and asset protection.
+
+
+
+
+
+
+
+
+
+# Controls and Compliance Checklist
+
+To complete the controls assessment checklist, refer to the information provided in the scope, goals, and risk assessment report. For more details about each control, including the type and purpose, refer to the control categories document.
+
+---
+
+## Controls Assessment Checklist
+
+### **Does Botium Toys currently have this control in place?**
+
+| Control                                              | Yes/No |
+|------------------------------------------------------|--------|
+| Least Privilege                                      |        |
+| Disaster recovery plans                              |        |
+| Password policies                                    |        |
+| Separation of duties                                 |        |
+| Firewall                                             |        |
+| Intrusion detection system (IDS)                    |        |
+| Backups                                              |        |
+| Antivirus software                                   |        |
+| Manual monitoring, maintenance, and intervention     |        |
+| Encryption                                           |        |
+| Password management system                           |        |
+| Locks (offices, storefront, warehouse)              |        |
+| Closed-circuit television (CCTV) surveillance       |        |
+| Fire detection/prevention (fire alarm, sprinkler)   |        |
+
+---
+
+## Compliance Checklist
+
+### **Does Botium Toys currently adhere to this compliance best practice?**
+
+### **Payment Card Industry Data Security Standard (PCI DSS)**
+
+| Best Practice                                                                 | Yes/No |
+|------------------------------------------------------------------------------|--------|
+| Only authorized users have access to customers’ credit card information.    |        |
+| Credit card information is stored, accepted, processed, and transmitted in a secure environment. |        |
+| Data encryption procedures are implemented to secure credit card transactions. |        |
+| Secure password management policies are adopted.                            |        |
+
+### **General Data Protection Regulation (GDPR)**
+
+| Best Practice                                                                 | Yes/No |
+|------------------------------------------------------------------------------|--------|
+| E.U. customers’ data is kept private/secure.                                |        |
+| A plan is in place to notify E.U. customers within 72 hours of a breach.    |        |
+| Data is properly classified and inventoried.                                |        |
+| Privacy policies, procedures, and processes are enforced.                   |        |
+
+### **System and Organization Controls (SOC Type 1, SOC Type 2)**
+
+| Best Practice                                                                 | Yes/No |
+|------------------------------------------------------------------------------|--------|
+| User access policies are established.                                       |        |
+| Sensitive data (PII/SPII) is confidential/private.                          |        |
+| Data integrity ensures consistency, completeness, accuracy, and validation. |        |
+| Data is available to individuals authorized to access it.                   |        |
+
+---
+
+## Recommendations
+
+### **Recommendations to the IT Manager of Botium Toys Inc:**
+
+1. **Encryption Framework:**  
+   Establish a robust encryption security framework to protect all customer, employee, and personal data. This protects against cybercriminals and other threats.
+
+2. **Disaster Recovery Plan:**  
+   Develop a strong disaster recovery plan that includes:  
+   - Monthly safety drills to educate employees on recovery procedures.  
+   - Backup strategies using cloud computing and portable hardware for data recovery.
+
+3. **Access Control Mechanisms:**  
+   Enforce strict access control by implementing:  
+   - Group policy permissions.  
+   - Separation of duties and least privilege access.  
+
+4. **Intrusion Detection and Prevention:**  
+   Install an advanced IDS/IPS system with 24/7 AI-powered monitoring and regular updates to prevent cyberattacks.
+
+5. **Password Management System:**  
+   Use tools like "LastPass" for secure password generation and management. Implement additional measures such as:  
+   - Two-factor authentication.  
+   - CAPTCHA verification.  
+   - Monthly randomized password resets.
+
+6. **Legacy System Monitoring:**  
+   Create a strict schedule for monitoring and maintaining legacy systems. Implement intervention methods to respond to threats promptly.
+
+These recommendations will help Botium Toys reduce risks, strengthen its cybersecurity framework, and ensure compliance with relevant standards and regulations.
+
 
